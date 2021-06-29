@@ -132,7 +132,10 @@ body {
   line-height: 24px;
   margin-left: 6px;
 }
-@media (width: 320px) {
+@media (min-width: 320px) {
+  .image {
+    width: 320px;
+  }
   .header-mid-side {
     display: none;
   }
@@ -143,7 +146,7 @@ body {
     display: none;
   }
 }
-@media (width: 768px) {
+@media (min-width: 768px) {
   .divider {
     margin-left: 20px;
     margin-right: 20px;
@@ -186,20 +189,7 @@ body {
     display: none;
   }
 }
-@media (width: 1120px) {
-  .header-mid-side {
-    display: none;
-  }
-  .divider {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .menu {
-    order: -2;
-  }
-  .header-left-side__divider {
-    order: -1;
-  }
+@media (min-width: 1120px) {
   .about {
     line-height: 20px;
   }
@@ -237,6 +227,10 @@ body {
   }
   .repair__button {
     margin: 0 20px;
+  }
+  .title-right-side {
+    display: flex;
+    margin-right: 20px;
   }
   .title-right-side__text {
     font-family: TTLakes-Regular, sans-serif;
