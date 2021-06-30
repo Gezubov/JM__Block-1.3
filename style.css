@@ -151,6 +151,7 @@ li {
   .header-left-side::after {
     content: url("asserts/img/divider.svg");
     margin: 0 20px;
+    display: block;
   }
   .cps-photo {
     max-width: 320px;
@@ -193,7 +194,6 @@ li {
     border-radius: 5px;
   }
   .header-right-side {
-    margin-left: 260px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
