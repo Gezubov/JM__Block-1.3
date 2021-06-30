@@ -45,13 +45,13 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
-.button{
+.button {
   padding: 0;
   border: none;
-  background-color:inherit;
+  background-color: inherit;
 }
-.menu-button{
-  margin:0 16px;
+.menu-button {
+  margin: 0 16px;
 }
 .header-right-side {
   display: flex;
@@ -66,7 +66,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.title-menu{
+.title-menu {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -79,18 +79,18 @@ body {
   position: absolute;
   left: 0;
 }
-menu{
-  margin:0;
+menu {
+  margin: 0;
   padding: 0;
 }
 .navigation {
-  min-height:40px;
+  min-height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   overflow: scroll;
 }
-li{
+li {
   list-style-type: none;
 }
 
@@ -140,10 +140,10 @@ li{
   line-height: 24px;
   margin-left: 6px;
 }
-.button-tablet{
+.button-tablet {
   display: none;
 }
-.check-status-button{
+.check-status-button {
   margin: 0 16px;
 }
 
@@ -160,8 +160,8 @@ li{
   }
 }
 @media (min-width: 768px) {
-  .button-tablet{
-    display: inherit;
+  .button-tablet {
+    display: block;
   }
   .header-left-side::after {
     content: none;
@@ -204,15 +204,16 @@ li{
   .title-menu {
     display: none;
   }
-  .repair-button::before{
+  .repair-button::before {
     content: url("asserts/img/divider.svg");
     margin: 0 20px;
   }
-  .navigation {    
-    min-height:75px;
+  .navigation {
+    min-height: 75px;
     margin-left: 20px;
     justify-content: flex-start;
     flex-wrap: wrap;
+    overflow: hidden;
   }
 }
 @media (min-width: 1120px) {
@@ -243,8 +244,8 @@ li{
     margin-right: 24px;
     border-radius: 5px;
   }
-  .navigation {    
-    min-height:75px;
+  .navigation {
+    min-height: 75px;
     margin-left: 20px;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -257,11 +258,10 @@ li{
     display: flex;
     margin-right: 20px;
   }
-  .button{
+  .button {
     display: flex;
     align-items: center;
     margin-left: 24px;
-
   }
   .button__text {
     font-family: TTLakes-Regular, sans-serif;
